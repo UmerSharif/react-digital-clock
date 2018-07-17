@@ -1,5 +1,6 @@
 import React from 'react';
 import Clock from './clock';
+import './clock.css';
 
 class Tick extends React.Component {
     constructor(props){
@@ -19,7 +20,7 @@ class Tick extends React.Component {
     }
 
     componentWillUnmount() {
-
+        clearInterval(this.TimerID);
     }
 
     render(){
