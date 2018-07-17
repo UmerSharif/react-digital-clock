@@ -15,7 +15,7 @@ class Tick extends React.Component {
     }
 
     componentDidMount() {
-
+        this.TimerID = setInterval(()=> this.Tick(),1000);
     }
 
     componentWillUnmount() {
